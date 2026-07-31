@@ -7,6 +7,28 @@
     --bg-light: #f8fafc;
 }
 
+/* Dark Mode Variables - These override the :root when active */
+body.dark-theme {
+    --bg-light: #121212; /* Deep charcoal background */
+    --text-dark: #f8fafc; /* Make text light */
+    --text-light: #1a1a1a; /* Darken header/contact sections */
+    --primary-color: #60a5fa; /* A lighter blue so it pops on dark backgrounds */
+}
+
+/* Style the toggle button to blend in */
+.theme-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
+
 * {
     margin: 0;
     padding: 0;
