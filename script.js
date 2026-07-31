@@ -44,3 +44,30 @@ document.addEventListener("DOMContentLoaded", () => {
     resultsContainer.classList.add("show-results");
   });
 });
+
+// --- DARK MODE TOGGLE LOGIC ---
+const themeBtn = document.getElementById("theme-toggle");
+const body = document.body;
+
+// 1. Check if the user previously chose dark mode (checking browser memory)
+const currentTheme = localStorage.getItem("theme");
+
+if (currentTheme === "dark") {
+  body.classList.add("dark-theme");
+  themeBtn.textContent = "☀️"; // Swap to sun icon if it's dark
+}
+
+// 2. Listen for a click on the theme button
+themeBtn.addEventListener("click", () => {
+  // Toggle the class on the body
+  body.classList.toggle("dark-theme");
+
+  // 3. Update the icon and save their preference to local storage
+  if (body.classList.contains("dark-theme")) {
+    themeBtn.textContent = "☀️";
+    localStorage.setItem("theme", "dark");
+  } else {
+    themeBtn.textContent = "🌙";
+    localStorage.setItem("theme", "light");
+  }
+});

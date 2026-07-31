@@ -103,6 +103,11 @@
         <h2>Request an Estimate</h2>
         <p>Ready to transform your space? Fill out the form below. For the fastest, most accurate pricing, we highly encourage providing a link to a video walkthrough of your project scope!</p>
         
+        <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Request an Estimate</h2>
+        <p>Ready to transform your space? Fill out the form below. For the fastest, most accurate pricing, we highly encourage providing a link to a video walkthrough of your project scope!</p>
+        
         <form action="#" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -110,13 +115,20 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Project Details (Paste a link to your video walkthrough here!):</label>
+            <!-- THIS IS THE NEW UPLOAD SECTION -->
+            <label for="project-files">Upload Photos or Short Video Clips (Max 25MB):</label>
+            <input type="file" id="project-files" name="project-files" accept="image/jpeg, image/png, video/mp4, video/quicktime" multiple>
+            
+            <p class="form-note">Have a large video walkthrough? Please paste a Google Drive, iCloud, or YouTube link in the details below, or let us know and you can text it directly to us!</p>
+
+            <label for="message">Project Details & Video Links:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
             <button type="submit">Send Request</button>
         </form>
     </section>
 
+    
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 Z Works Painting, LLC. All rights reserved.</p>

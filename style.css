@@ -95,10 +95,10 @@ nav a:hover {
     background-position: center;
     background-repeat: no-repeat;
     
-    color: var(--text-light);
-    text-align: center;
+    /* FIX: Hardcode this to white so it ignores the dark mode variable */
+    color: #ffffff; 
     
-    /* Increased the padding slightly to show off more of the photo */
+    text-align: center;
     padding: 8rem 5%;
 }
 
