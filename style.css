@@ -88,7 +88,7 @@ nav a:hover {
     background-color: var(--primary-color);
     
     /* This adds a dark overlay AND links to your image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/hero-bg.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/custom-exterior-home-painting.jpeg.jpeg');
     
     /* This ensures the image covers the whole section perfectly */
     background-size: cover;
