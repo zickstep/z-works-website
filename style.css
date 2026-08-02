@@ -375,3 +375,14 @@ footer {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.nav-logo {
+    height: 45px; 
+    width: auto;
+}
