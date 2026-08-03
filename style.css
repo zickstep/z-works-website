@@ -383,6 +383,42 @@ footer {
 }
 
 .nav-logo {
-    height: 45px; 
+    height: 75px; /* Bumped up from 45px so it stands out! */
     width: auto;
+}
+
+/* --- MOBILE RESPONSIVENESS REPAIRS --- */
+@media (max-width: 768px) {
+    /* Hard stop to prevent the page from scrolling left and right */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Forces the navigation bar to stack vertically instead of side-by-side */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Centers your logo and title */
+    .nav-brand {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    /* Shrinks the title text just a bit so it doesn't wrap awkwardly */
+    .nav-brand h1 {
+        font-size: 1.5rem; 
+    }
+
+    /* Wraps the navigation links neatly instead of squishing them */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
 }
