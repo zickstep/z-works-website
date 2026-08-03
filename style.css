@@ -422,3 +422,51 @@ footer {
         padding: 0;
     }
 }
+
+/* REVIEWS SECTION */
+#reviews {
+    padding: 4rem 10%;
+    background-color: #222;
+    text-align: center;
+}
+
+#reviews h2 {
+    margin-bottom: 2rem;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.review-card {
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    text-align: left;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.review-text {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #fff;
+}
+
+.review-author span {
+    font-weight: normal;
+    font-size: 0.85rem;
+    color: #aaa;
+}
